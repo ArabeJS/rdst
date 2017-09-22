@@ -9,9 +9,10 @@
  */
 angular.module('rdstApp')
   .controller('PrcMstCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    function listHig() {
+      var wh = $(window).height() - 250;
+      $('head').append('<style>.RD-prc-mst-lst tbody{height:'+wh+'px}</style>')
+    }
+    listHig();
+    $(window).on('resize',listHig);
   });
