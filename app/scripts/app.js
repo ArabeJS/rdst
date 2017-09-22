@@ -33,6 +33,16 @@ angular
         controller: 'PrcMstCtrl',
         controllerAs: 'prcMst'
       })
+      .when('/prc_std', {
+        templateUrl: 'views/presence_student/presence_student.html',
+        controller: 'PrcStdCtrl',
+        controllerAs: 'prcStd'
+      })
+      .when('/rep_atd', {
+        templateUrl: 'views/reports_attendees/reports_attendees.html',
+        controller: 'ReportsAttendeesCtrl',
+        controllerAs: 'reportsAttendees'
+      })
       .otherwise({
         redirectTo: '/'
       });

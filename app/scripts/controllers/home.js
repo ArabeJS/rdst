@@ -24,12 +24,12 @@ angular.module('rdstApp')
         {//presence students
           'title': lng('04'),
           'icon': 'alarm',
-          'url': '#'
+          'url': 'prc_std'
         },
         {//Reports Attendees And absence
           'title': lng('05'),
           'icon': 'alarm_on',
-          'url': '#'
+          'url': 'rep_atd'
         }
       ],
       /**************=- line 2 -=**************/
