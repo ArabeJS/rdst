@@ -9,10 +9,8 @@
  */
 angular.module('rdstApp')
   .controller('AllCtrl', function ($scope, $location) {
-    $scope.lng = function (v) {
-      return lngs[v];
-    };
-    
+    $scope.lng = lng;
+
     $scope.go = function (v) {
       $location.path(v);
     }

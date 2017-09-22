@@ -8,6 +8,9 @@
  *
  * Main module of the application.
  */
+ var lng = function (v) {
+   return lngs[v];
+ };
 angular
   .module('rdstApp', [
     'ngAnimate',
